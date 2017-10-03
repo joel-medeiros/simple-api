@@ -22,4 +22,10 @@ abstract class TestCase extends Illuminate\Foundation\Testing\TestCase
 
         return $app;
     }
+
+    public function getAuth()
+    {
+        $user = \App\User::find(1);
+        return ['Authorization' => 'Bearer ' . $user->api_token];
+    }
 }
