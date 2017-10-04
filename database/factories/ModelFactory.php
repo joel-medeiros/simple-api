@@ -21,3 +21,13 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'api_token' => str_random(60),
     ];
 });
+
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Vehicle::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->word,
+        'brand' => $faker->word,
+        'year'  => $faker->year('now'),
+        'description' => $faker->text()
+    ];
+});

@@ -13,6 +13,33 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:api');
+//Route::resource('vehicles', 'VehicleController', [
+//    'except' => ['create', 'edit'],
+//]);
+
+Route::group(['prefix' => 'vehicles'], function(){
+
+    Route::get('', 'VehicleController@index')
+        ->name('vehicle.index');
+
+    Route::post('', 'VehicleController@store')
+        ->name('vehicle.store');
+
+    Route::get('find', 'VehicleController@search')
+        ->name('vehicle.search');
+
+    Route::get('{id}', 'VehicleController@show')
+        ->name('vehicle.show')
+        ->where('id', '[0-9]+');
+
+    Route::match(['PUT', 'PATCH'],'{id}', 'VehicleController@update')
+        ->name('vehicle.update')
+        ->where('id', '[0-9]+');
+
+    Route::delete('{id}', 'VehicleController@destroy')
+        ->name('vehicle.delete')
+        ->where('id', '[0-9]+');
+
+});
+
+
