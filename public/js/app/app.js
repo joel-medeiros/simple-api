@@ -1,0 +1,1 @@
+var vehicleApp = angular.module('vehicleApp', ['mainCtrl', 'vehicleService']);

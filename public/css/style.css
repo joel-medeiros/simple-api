@@ -1,0 +1,124 @@
+body, div.no-background-and-border {
+	background-color: #e2e4e1 !important;
+	border: none !important;
+}
+
+div.header{
+	background-color:#364147;
+}
+
+div.title{
+	padding: 1.25rem;
+	text-transform: uppercase; 
+	color: #ffffff;
+}
+
+a.btn-add{
+	background-color: #344046 !important;
+	border-color: #344046;
+	border-radius: 25px;
+	margin-top: -10px;
+}
+
+a.btn-add:hover{
+	background-color: #1d7555 !important;
+	border-color: #1d7555;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+a.btn-add i {
+	color: #ffffff;
+}
+
+div.search{
+	background-color: #2a3138;
+	padding: 1.25rem;
+}
+
+div.search > input{
+	background-color: #2a3138;
+	color: #a4a5a3;
+	border: none;
+}
+
+div.search > input:focus{
+	background-color: #2a3138;
+	color: #a4a5a3;
+	border: none;
+}
+
+div.card .details  input{
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+h4.card-title.page-title{
+	margin-top: 50px;
+}
+
+h4.card-title{
+	border-bottom: solid 1px #b9bbb8;
+	padding-bottom: 15px;
+}
+
+
+h4.vehicle-title{
+	border: none;
+	padding-bottom: 10px;
+	color: #4c8d74;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+ul li.list-group-item{
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+span.content-title{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: block;
+}
+
+ul li.list-group-item > span{
+	display: block;
+}
+
+ul li.list-group-item > span:last-child{
+	display: inline !important;
+}
+
+ul li.list-group-item > span.brand{
+	color: #364147;
+}
+
+ul li.list-group-item > span.vehicle{
+	color: #1d7555;
+}
+
+ul li.list-group-item > span.vehicle > i{
+	color: #364147;
+}
+
+i.sold{
+	color: #1d7555 !important;
+}
+
+ul li.list-group-item > span.year{
+	color: #798083
+}
+
+button{
+    border-radius: 0px !important;
+    width: 100px;
+	background-color: #45535a !important;
+	border-color: #45535a !important;
+}
