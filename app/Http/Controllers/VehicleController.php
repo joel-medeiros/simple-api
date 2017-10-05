@@ -29,7 +29,7 @@ class VehicleController extends Controller
 
     public function search(Request $request)
     {
-        return response()->json($this->vehicle->where('name', 'like', $request->query('q'))->first());
+        return response()->json($this->vehicle->where('name', 'like', '%' . $request->query('q') . '%')->get());
     }
 
     /**
